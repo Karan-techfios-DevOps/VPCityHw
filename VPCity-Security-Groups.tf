@@ -79,7 +79,7 @@ resource "aws_security_group" "Delta" {
   vpc_id      = aws_vpc.VPCity.id
 
   ingress {
-    description      = "HTTP, SSH and Alpha from VPC"
+    description      = "Allow All"
     from_port        = 0
     to_port          = 0
     protocol         = "-1"
