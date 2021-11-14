@@ -34,7 +34,7 @@ resource "aws_route_table" "private-rt" {
   }
   /* DO NOT NEED TO INCLUDE THIS - Default value provided by AWS
   route {
-    cidr_block = "10.0.1.0/25"
+    cidr_block = "10.0.0.0/21"
     gateway_id = aws_nat_gateway.VPCity-NAT-gw.id
   }
   */
